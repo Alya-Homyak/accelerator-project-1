@@ -9,11 +9,35 @@
   </head>
 
   <body class="page-body">
+    <header class="header">
+      <div class="header__container">
+        <svg width="100" height="20">
+          <use href="/__spritemap#sprite-logo"></use>
+        </svg>
+        <a class="header__phone" href="tel:88005555555">8 800 555-55-55</a>
+      </div>
+      </header>
+
+    <main>
+      <h1 class="visually-hidden">SUPERGYM</h1>
+      <section data-test="hero" class="hero">
+        <div class="hero__container">
+          <div class="hero__titles">
+            <p class="hero__sup-title">Омск</p>
+            <h2 class="hero__title">Фитнес центр</h2>
+          </div>
+          <ul class="hero__list no-list">
+            <li class="hero__item">Тренажёрный зал</li>
+            <li class="hero__item">Групповые занятия</li>
+            <li class="hero__item">Кардио-зона</li>
+          </ul>
+          <button class="hero__button">Купить абонемент</button>
+        </div>
+      </section>
+    </main>
+
     <!-- пример использования спрайта -->
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
     <!-- примеры требуемых атрибутов data-test="*" -->
     <div data-test="hero">hero</div>
     <div data-test="about">about</div>
