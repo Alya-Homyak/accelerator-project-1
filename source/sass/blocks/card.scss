@@ -1,0 +1,39 @@
+.card {
+  background-color: $base-white;
+  font-family: "RobotoCondensed", sans-serif;
+  padding: 50px 42px;
+}
+
+.card__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.card__information {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  margin: 0 0 62px;
+}
+
+.card__price {
+  font-size: 48px;
+  line-height: 150%;
+  font-weight: 700;
+  color: $price-blue;
+  margin: 0 0 20px;
+}
+
+.card__button {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $base-blue;
+  border: 2px solid $base-blue;
+  padding: 25px;
+  background-color: transparent;
+  width: 100%;
+}
