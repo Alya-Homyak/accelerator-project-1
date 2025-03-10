@@ -1,0 +1,40 @@
+.juri {
+  padding: 40px 0;
+}
+
+.juri__container {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.juri__title {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+.juri__item {
+  position: relative;
+  text-align: center;
+  &:nth-child(n) {
+    display: none;
+  }
+  &:nth-child(1) {
+    display: block;
+  }
+}
+
+.juri__name {
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  font-family: "RobotoCondensed", sans-serif;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  color: $base-white;
+  margin: 0;
+  bottom: 24px;
+  transform: translateX(50%);
+}
