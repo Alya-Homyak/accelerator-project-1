@@ -1,5 +1,5 @@
 .about {
-padding: 40px 0;
+  padding: 40px 0;
 }
 
 .about__container {
@@ -71,7 +71,7 @@ padding: 40px 0;
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     bottom: 7px;
     left: 7px;
     position: absolute;
@@ -84,7 +84,7 @@ padding: 40px 0;
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: white;
+    background: $base-white;
     bottom: 7px;
     left: 7px;
     position: absolute;
@@ -97,6 +97,7 @@ padding: 40px 0;
   &:hover {
     background-color: $base-white;
     border-color: rgba(16, 38, 84, 0.6);
+
     &::before {
       background: $base-white;
     }
@@ -109,6 +110,7 @@ padding: 40px 0;
   &:focus {
     background-color: $base-white;
     border-color: $base-blue;
+
     &::before {
       background: #c8c9cc;
     }
@@ -121,6 +123,7 @@ padding: 40px 0;
   &:active {
     background-color: $base-white;
     border-color: $base-blue;
+
     &::before {
       background: $base-white;
     }
@@ -134,6 +137,7 @@ padding: 40px 0;
     background-color: $base-white;
     border-color: $base-blue;
     opacity: 40%;
+
     &::before {
       background: $base-white;
       opacity: 40%;
