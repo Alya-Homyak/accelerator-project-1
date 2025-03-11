@@ -36,8 +36,112 @@ padding: 40px 0;
   display: block;
 }
 
+.about__video-container {
+  position: relative;
+  margin: 0 -15px;
+}
+
 .about__video {
   object-fit: contain;
-  margin: 0 -15px;
+  display: none;
+  border: none;
+}
+
+
+.about__play {
   display: block;
+  padding: 0;
+  z-index: 1;
+  text-align: center;
+  align-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid rgba(237, 2, 51, 0.2);
+  background-color: transparent;
+  position: absolute;
+  bottom: 51px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &::before {
+    content: "";
+    z-index: -2;
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    bottom: 7px;
+    left: 7px;
+    position: absolute;
+  }
+
+  &::after {
+    content: "";
+    z-index: -1;
+    display: block;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: white;
+    bottom: 7px;
+    left: 7px;
+    position: absolute;
+    mask-image: url("/__spritemap#sprite-icon-play-view");
+    mask-size: 12px 12px;
+    mask-repeat: no-repeat;
+    mask-position: 21px 21px;
+  }
+
+  &:hover {
+    background-color: $base-white;
+    border-color: rgba(16, 38, 84, 0.6);
+    &::before {
+      background: $base-white;
+    }
+
+    &::after {
+      background: rgba(16, 38, 84, 0.6);
+    }
+  }
+
+  &:focus {
+    background-color: $base-white;
+    border-color: $base-blue;
+    &::before {
+      background: #c8c9cc;
+    }
+
+    &::after {
+      background: $base-blue;
+    }
+  }
+
+  &:active {
+    background-color: $base-white;
+    border-color: $base-blue;
+    &::before {
+      background: $base-white;
+    }
+
+    &::after {
+      background: $base-blue;
+    }
+  }
+
+  &:disabled {
+    background-color: $base-white;
+    border-color: $base-blue;
+    opacity: 40%;
+    &::before {
+      background: $base-white;
+      opacity: 40%;
+    }
+
+    &::after {
+      background: $base-blue;
+      opacity: 40%;
+    }
+  }
 }

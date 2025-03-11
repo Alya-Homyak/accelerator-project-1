@@ -48,7 +48,9 @@
   line-height: 12px;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
   color: inherit;
+  text-align: center;
   position: absolute;
   left: 0;
   right: 0;
@@ -58,4 +60,27 @@
   padding: 22px 0;
   margin: 0 auto;
   width: 290px;
+
+
+  &:hover {
+    background-color: $base-white;
+    color: $price-blue;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: #000000;
+    color: $price-blue;
+  }
+
+  &:active {
+    background-color: $base-white;
+    color: $base-blue;
+  }
+
+  &:disabled {
+    opacity: 50%;
+    color: $base-white;
+
+  }
 }

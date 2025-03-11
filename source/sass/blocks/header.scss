@@ -22,4 +22,20 @@
   font-weight: 700;
   color: $base-white;
   text-decoration: none;
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.5);
+  }
+
+  &:focus {
+    color: $secondary-blue;
+  }
+
+  &:active {
+    color: $base-blue;
+  }
+
+  &:disabled {
+    color: $secondary-white;
+  }
 }
