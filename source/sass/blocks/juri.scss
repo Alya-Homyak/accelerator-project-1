@@ -6,6 +6,7 @@
   padding: 0 30px;
   text-align: center;
   margin: 0 auto;
+  width: 260px;
 }
 
 .juri__title {
@@ -105,5 +106,6 @@
   color: $base-white;
   margin: 0;
   bottom: 24px;
-  transform: translateX(50%);
+  left: 0;
+  right: 0;
 }
