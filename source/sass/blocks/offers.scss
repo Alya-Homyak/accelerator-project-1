@@ -1,0 +1,105 @@
+.offers {
+  padding: 40px 0;
+  background-color: $base-white;
+}
+
+.offers__container {
+  width: 320px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  color: $secondary-blue;
+  text-align: center;
+}
+
+.offers__title {
+  font-family: inherit;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0 0 40px;
+}
+
+.offers__promo {
+  font-family: "RobotoCondensed", sans-serif;
+  background-color: $accent-red;
+  color: $base-white;
+  padding: 30px;
+
+  & p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    margin: 0 0 30px;
+  }
+
+  & p:nth-child(1) {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 0 0 8px;
+  }
+
+  & h3 {
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 700;
+    margin: 0 0 28px;
+  }
+
+  & a {
+    display: block;
+    width: min-content;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    margin: 0 auto 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid $base-white;
+    padding-bottom: 3px;
+  }
+}
+
+.offers__image {
+  margin-bottom: 40px;
+}
+
+.offers__section {
+  font-family: "RobotoCondensed", sans-serif;
+  color: $secondary-blue;
+  padding: 20px;
+  margin: 0 15px 30px;
+  border: solid 7px;
+  border-image: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%) 7;
+
+  & p {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    margin: 0 0 20px;
+  }
+
+  & h3 {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 0 0 20px;
+  }
+
+  & a {
+    display: block;
+    width: min-content;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    margin: 0 auto 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid $secondary-blue;
+    padding-bottom: 4px;
+  }
+}

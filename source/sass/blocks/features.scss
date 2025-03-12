@@ -16,7 +16,7 @@
 .features__item {
   padding: 0 15px;
   width: 290px;
-  margin-bottom: 33px;
+  margin-bottom: 35px;
 
   &:nth-last-child(1) {
     margin-bottom: 0;
@@ -53,7 +53,7 @@
     font-size: 18px;
     line-height: 20px;
     font-weight: 400;
-    margin: 0 0 14px;
+    margin: 0 0 12px;
   }
 }
 
@@ -62,13 +62,13 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 300;
-  margin: 38px -15px 40px;
-  padding: 30px 45px;
+  margin: 40px -15px;
+  padding: 30px 75px 40px;
   color: $base-white;
   background-color: $base-blue;
 
   & p {
-    margin: 0 0 10px;
+    margin: 0;
   }
 
   & p:nth-child(1) {
