@@ -16,6 +16,11 @@
 .features__item {
   padding: 0 15px;
   width: 290px;
+  margin-bottom: 33px;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
 }
 
 .features__card {
@@ -23,7 +28,6 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 300;
-  margin-bottom: 33px;
 
   & p {
     margin: 0 30px;
