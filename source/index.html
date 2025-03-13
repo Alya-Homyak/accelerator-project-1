@@ -384,25 +384,53 @@
           <div class="faq__item faq__item--active">
             <h3>Как стать членом фитнес-центра?</h3>
             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-            <button class="faq__item-button"></button>
+            <button class="faq__item-button" type="button"><span class="visually-hidden">кнопка</span></button>
           </div>
           <div class="faq__item">
             <h3>Где можно посмотреть расписание?</h3>
             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-            <button class="faq__item-button"></button>
+            <button class="faq__item-button" type="button"><span class="visually-hidden">кнопка</span></button>
           </div>
           <div class="faq__item">
             <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
-            <button class="faq__item-button"></button>
+            <button class="faq__item-button" type="button"><span class="visually-hidden">кнопка</span></button>
           </div>
           <div class="faq__item">
             <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
             <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p><div class="faq__content">
-
             </div>
-            <button class="faq__item-button"></button>
+            <button class="faq__item-button" type="button"><span class="visually-hidden">кнопка</span></button>
           </div>
+        </div>
+      </section>
+
+      <section class="reviews" data-test="reviews">
+        <div class="reviews__container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__item">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.jpg 1x, ./img/tablet-review-img@2x.jpg 2x" width="80" height="80">
+              <img width="68" height="68" src="./img/mobile-review-img@1x.jpg" srcset="./img/mobile-review-img@2x.jpg 2x" alt="Фото клиента">
+            </picture>
+            <h3>Анна Орлова</h3>
+            <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="form" data-test="form">
+        <div class="form__container">
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset>
+              <legend>Бесплатное занятие</legend>
+              <label for="name"><span class="visually-hidden">Имя</span></label>
+              <input type="text" name="name" id="name" value="Имя" required>
+              <label for="tel"><span class="visually-hidden">Телефон</span></label>
+              <input type="tel" name="tel" id="tel" value="Телефон" required>
+            </fieldset>
+            <button class="form__button" type="submit">отправить</button>
+          </form>
         </div>
       </section>
     </main>

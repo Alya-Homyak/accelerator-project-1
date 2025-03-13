@@ -39,7 +39,7 @@
 .faq__button--active {
   color: $base-white;
   border: none;
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
 }
 
 .faq__item {
@@ -56,7 +56,7 @@
   text-align: left;
   padding: 20px 0;
 
-  & h3 {
+  h3 {
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
@@ -69,7 +69,7 @@
     grid-row: 1 / 2;
   }
 
-  & p {
+  p {
     margin: 0;
     display: none;
     grid-column: 1 / 2;
@@ -111,7 +111,8 @@
 
 .faq__item--active {
   row-gap: 20px;
-  & p {
+
+  p {
     margin: 0;
     display: block;
   }
@@ -133,4 +134,3 @@
     mask-size: 14px 1px;
   }
 }
-
