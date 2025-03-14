@@ -31,7 +31,7 @@
 }
 
 .juri__active {
-  font-family: "RobotoCondensed", sans-serif;
+  font-family: $roboto;
   display: none;
   position: absolute;
   background-color: rgba(16, 38, 84, 0.89);
@@ -100,7 +100,7 @@
   position: absolute;
   text-align: center;
   z-index: 1;
-  font-family: "RobotoCondensed", sans-serif;
+  font-family: $roboto;
   font-size: 22px;
   line-height: 22px;
   font-weight: 400;

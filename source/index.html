@@ -35,7 +35,7 @@
         </div>
       </section>
 
-      <section class="about" data-test="about">
+      <section class="about" data-test="about" id="about">
         <div class="about__container">
           <h2 class="about__title">Тренажёрный зал</h2>
           <h3 class="about__sup-title">Просторный зал площадью 900 кв/м</h3>
@@ -168,7 +168,7 @@
         </div>
       </section>
 
-      <section class="juri" data-test="juri">
+      <section class="juri" data-test="juri" id="juri">
         <div class="juri__container">
           <h2 class="juri__title">Жюри</h2>
           <ul class="no-list">
@@ -343,7 +343,7 @@
         </div>
       </section>
 
-      <section class="offers" data-test="offers">
+      <section class="offers" data-test="offers" id="offers">
         <div class="offers__container">
           <h2 class="offers__title">Акции</h2>
           <div class="offers__promo">
@@ -420,6 +420,7 @@
       </section>
 
       <section class="form" data-test="form">
+        <h2 class="visually-hidden">Форма</h2>
         <div class="form__container">
           <form action="https://echo.htmlacademy.ru/" method="post">
             <fieldset>
@@ -433,22 +434,75 @@
           </form>
         </div>
       </section>
-    </main>
 
+      <section class="contacts">
+        <div class="contacts__container">
+          <h2 class="contacts__title">Контакты</h2>
+          <address class="contacts__adress adress">
+            <div>
+              <p class="adress__title">Адрес:</p>
+              <p class="adress__information">г. Омск, ул. 60 лет Октября, 7</p>
+            </div>
+            <div>
+              <p class="adress__title">График работы:</p>
+              <p class="adress__information">Пн-Вс: с 8:00 до 22:00</p>
+            </div>
+            <div>
+              <p class="adress__title">Телефон:</p>
+              <a class="adress__information" href="tel:8800555-55-55">8 800 555-55-55</a>
+            </div>
+            <div>
+              <p class="adress__title">Email:</p>
+              <a class="adress__information" href="oмск@supergym.ru">oмск@supergym.ru</a>
+            </div>
+          </address>
+        </div>
+      </section>
+
+      <footer class="footer" data-test="footer">
+        <div class="footer__container">
+          <svg class="footer__logo" width="100" height="20">
+            <use href="/__spritemap#sprite-logo"></use>
+          </svg>
+          <div class="footer__navigation navigation">
+            <ul class="navigation__list no-list">
+              <li class="navigation__item">
+                <a href="#about">Услуги</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#price">Абонементы</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#offers">Акции</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#juri">Тренеры</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#">Расписание</a>
+              </li>
+            </ul>
+            <div class="footer__social">
+              <a class="footer__social--vk" href="#"><span class="visually-hidden">ВКонтакте</span></a>
+              <a class="footer__social--ok" href="#"><span class="visually-hidden">Одноклассники</span></a>
+              <a class="footer__social--rd" href="#"><span class="visually-hidden">Реддит</span></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <!-- <svg width="25" height="25">
+      <use href="/__spritemap#sprite-icon-vk"></use>
+    </svg>
+    <svg width="25" height="25">
+      <use href="/__spritemap#sprite-icon-ok"></use>
+    </svg>
+    <svg width="25" height="25">
+      <use href="/__spritemap#sprite-icon-rd"></use>
+    </svg> -->
     <!-- пример использования спрайта -->
     <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт"> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
   </body>
 

@@ -1,0 +1,20 @@
+.contacts {
+  background-color: $base-white;
+  color: $base-blue;
+  padding: 40px 0;
+}
+
+.contacts__container {
+  padding: 0 15px;
+  width: 290px;
+  margin: 0 auto;
+}
+
+
+.contacts__title {
+  font-family: $alumni;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 24px;
+  margin: 0 0 42px;
+}

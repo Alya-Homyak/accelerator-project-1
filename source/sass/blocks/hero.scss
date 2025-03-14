@@ -1,7 +1,7 @@
 .hero {
   background: $bg-gradient;
   padding: 102px 15px 138px;
-  font-family: "RobotoCondensed", sans-serif;
+  font-family: $roboto;
   color: $base-white;
   position: relative;
 }
@@ -15,7 +15,7 @@
 }
 
 .hero__titles {
-  font-family: "AlumniSans", sans-serif;
+  font-family: $alumni;
   text-align: right;
 }
 

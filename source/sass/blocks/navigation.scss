@@ -1,0 +1,21 @@
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  a {
+    color: $base-white;
+    text-decoration: none;
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.navigation__item {
+  display: block;
+  width: min-content;
+  margin-right: 35px;
+  margin-bottom: 20px;
+}
+

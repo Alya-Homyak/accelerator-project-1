@@ -24,7 +24,7 @@
 }
 
 .features__card {
-  font-family: "RobotoCondensed", sans-serif;
+  font-family: $roboto;
   font-size: 14px;
   line-height: 22px;
   font-weight: 300;
@@ -58,7 +58,7 @@
 }
 
 .features__card--blue {
-  font-family: "RobotoCondensed", sans-serif;
+  font-family: $roboto;
   font-size: 14px;
   line-height: 22px;
   font-weight: 300;

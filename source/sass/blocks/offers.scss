@@ -22,7 +22,7 @@
 }
 
 .offers__promo {
-  font-family: "RobotoCondensed", sans-serif;
+  font-family: $roboto;
   background-color: $accent-red;
   color: $base-white;
   padding: 30px;
@@ -68,7 +68,7 @@
 }
 
 .offers__section {
-  font-family: "RobotoCondensed", sans-serif;
+  font-family: $roboto;
   color: $secondary-blue;
   padding: 20px;
   margin: 0 15px 30px;

@@ -1,6 +1,6 @@
 .games {
   padding: 25px 0;
-  font-family: "RobotoCondensed", sans-serif;
+  font-family: $roboto;
   color: $base-white;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .games__title {
-  font-family: "AlumniSans", sans-serif;
+  font-family: $alumni;
   font-size: 48px;
   line-height: 54px;
   font-weight: 600;
