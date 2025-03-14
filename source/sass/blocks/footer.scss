@@ -34,7 +34,7 @@
   }
 }
 
-.footer__social--vk::after {
+.footer__link-vk::after {
   content: "";
   display: block;
   width: 25px;
@@ -46,7 +46,7 @@
   background: #030a1a;
 }
 
-.footer__social--ok::after {
+.footer__link-ok::after {
   content: "";
   display: block;
   width: 25px;
@@ -58,7 +58,7 @@
   background: #030a1a;
 }
 
-.footer__social--rd::after {
+.footer__link-rd::after {
   content: "";
   display: block;
   width: 25px;
