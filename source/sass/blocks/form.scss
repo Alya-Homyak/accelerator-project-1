@@ -1,11 +1,12 @@
 .form {
   background-color: $base-blue;
-  padding: 70px 15px;
+  padding: 70px 15px 0;
 }
 
 .form__container {
   width: 290px;
   margin: 0 auto;
+  margin-bottom: 69px;
 
   form fieldset{
     display: flex;
