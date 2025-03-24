@@ -1,0 +1,86 @@
+.hero {
+  background: $bg-gradient;
+  padding: 102px 15px 138px;
+  font-family: $roboto;
+  color: $base-white;
+  position: relative;
+}
+
+.hero__container {
+  width: 290px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.hero__titles {
+  font-family: $alumni;
+  text-align: right;
+}
+
+.hero__sup-title {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0 0 16px;
+}
+
+.hero__title {
+  font-size: 62px;
+  line-height: 62px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.hero__list {
+  text-align: right;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  flex-shrink: 0;
+}
+
+.hero__button {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 32px;
+  background: transparent;
+  border: 2px solid $base-white;
+  padding: 22px 0;
+  margin: 0 auto;
+  width: 290px;
+  box-sizing: border-box;
+
+
+  &:hover {
+    background-color: $base-white;
+    color: $price-blue;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: #000000;
+    color: $price-blue;
+  }
+
+  &:active {
+    background-color: $base-white;
+    color: $base-blue;
+  }
+
+  &:disabled {
+    opacity: 50%;
+    color: $base-white;
+  }
+}

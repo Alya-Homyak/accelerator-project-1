@@ -1,0 +1,29 @@
+.adress {
+  font-style: normal;
+  font-family: $roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+
+  div {
+    margin-bottom: 27px;
+    &:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.adress__title {
+  font-size: 20px;
+  margin: 0 0 13px;
+}
+
+.adress__information {
+  margin: 0;
+}

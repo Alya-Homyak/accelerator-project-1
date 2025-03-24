@@ -1,0 +1,136 @@
+.faq {
+  padding: 70px 0;
+  background-color: $secondary-white;
+}
+
+.faq__container {
+  margin: 0 auto;
+  text-align: center;
+  width: 290px;
+  padding: 0 15px;
+}
+
+.faq__title {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0 0 35px;
+}
+
+.faq__tab {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.faq__button {
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: inherit;
+  padding: 14px 22px;
+  width: 140px;
+  border: 1px solid rgba(16, 38, 84, 0.2);
+}
+
+.faq__button--active {
+  color: $base-white;
+  border: none;
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+}
+
+.faq__item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  border-top: 1px solid #74819c;
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: $secondary-blue;
+  text-align: left;
+  padding: 20px 0;
+
+  h3 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  p {
+    margin: 0;
+    display: none;
+    grid-column: 1 / 2;
+  }
+
+  &:nth-last-child(1) {
+    border-bottom: 1px solid #74819c;
+  }
+}
+
+.faq__item-button {
+  display: block;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $secondary-blue;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-left: 22px;
+  position: relative;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: $secondary-blue;
+    mask-image: url("/__spritemap#sprite-icon-plus-view");
+    mask-size: 14px 14px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+  }
+}
+
+.faq__item--active {
+  row-gap: 20px;
+
+  p {
+    margin: 0;
+    display: block;
+  }
+}
+
+.faq__item--active .faq__item-button {
+  display: block;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  background-color: $secondary-blue;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+
+  &::after {
+    background-color: $base-white;
+    mask-image: url("/__spritemap#sprite-icon-minus-view");
+    mask-size: 14px 1px;
+  }
+}

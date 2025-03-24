@@ -1,0 +1,122 @@
+.price {
+  padding: 40px 0;
+  background-color: $secondary-white;
+}
+
+.price__container {
+  width: 290px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.price__title {
+  font-family: inherit;
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 0 0 32px;
+}
+
+.price__buttons {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  margin-bottom: 30px;
+}
+
+.price__button {
+  border: none;
+  position: relative;
+  background-color: transparent;
+  padding: 0 0 6px;
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: rgba(120, 120, 120, 0.2);
+
+  &:hover {
+    color: rgba(16, 38, 84, 0.7);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      border-bottom: 2px solid rgba(120, 120, 120, 1);
+    }
+  }
+
+  &:focus {
+    color: rgba(16, 38, 84, 1);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      border-bottom: 2px solid rgba(16, 38, 84, 1);
+    }
+  }
+
+  &:active {
+    color: rgba(16, 38, 84, 1);
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 2px;
+      border-bottom: 2px solid rgba(237, 2, 51, 1);
+    }
+  }
+}
+
+.price__button--active {
+  position: relative;
+  color: rgba(16, 38, 84);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    border-bottom: 2px solid rgba(237, 2, 51, 1);
+  }
+}
+
+.price__item {
+  margin-bottom: 35px;
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}
+
+.price__one-month {
+  display: block;
+}
+
+.price__six-month {
+  display: none;
+}
+
+.price__twelfe-month {
+  display: none;
+}

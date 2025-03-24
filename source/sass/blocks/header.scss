@@ -1,0 +1,42 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 16px 15px;
+  background-color: transparent;
+}
+
+.header__container {
+  width: 290px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header__phone {
+  font-family: $roboto;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 700;
+  color: $base-white;
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(28, 51, 116, 0.5);
+  }
+
+  &:focus {
+    color: $secondary-blue;
+  }
+
+  &:active {
+    color: $base-blue;
+  }
+
+  &:disabled {
+    color: $secondary-white;
+  }
+}

@@ -1,0 +1,45 @@
+.reviews {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.reviews__container {
+  padding: 0 40px;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.reviews__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0 0 40px;
+}
+
+.reviews__item {
+  padding: 30px 25px;
+  background-color: $secondary-blue;
+  color: $base-white;
+  font-family: $roboto;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+
+  img {
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0 0 16px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
