@@ -1,5 +1,5 @@
 .offers {
-  padding: 40px 0;
+  padding: 41px 0 40px;
   background-color: $base-white;
 }
 
@@ -18,14 +18,14 @@
   font-size: 32px;
   line-height: 32px;
   font-weight: 600;
-  margin: 0 0 40px;
+  margin: 0 0 39px;
 }
 
 .offers__promo {
   font-family: $roboto;
   background-color: $accent-red;
   color: $base-white;
-  padding: 30px;
+  padding: 31px 30px 29px;
 
   p {
     font-size: 16px;
@@ -70,10 +70,10 @@
 .offers__section {
   font-family: $roboto;
   color: $secondary-blue;
-  padding: 20px;
+  padding: 21px 20px 19px;
   margin: 0 15px 30px;
   border: solid 7px;
-  border-image: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%) 7;
+  border-image: linear-gradient(127.61deg, #d10a42 0%, #0041ca 120%) 7;
 
   p {
     font-size: 14px;

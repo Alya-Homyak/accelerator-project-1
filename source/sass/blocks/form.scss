@@ -1,19 +1,19 @@
 .form {
   background-color: $base-blue;
-  padding: 70px 15px 0;
+  padding: 72px 15px 0;
 }
 
 .form__container {
   width: 290px;
   margin: 0 auto;
-  margin-bottom: 69px;
+  margin-bottom: 70px;
 
   form fieldset{
     display: flex;
     flex-direction: column;
     border: none;
     padding: 0;
-    margin: 0;
+    margin: -1px;
     legend {
       font-family: $alumni;
       font-weight: 600;
@@ -32,8 +32,8 @@
       border: none;
       background-color: transparent;
       border-bottom: 1px solid #74819c;
-      padding: 0 0 4px;
-      margin: 0 0 36px;
+      padding: 0 0 3px;
+      margin: 0 0 37px;
       color: #74819c;
     }
   }
