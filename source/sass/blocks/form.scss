@@ -7,34 +7,50 @@
   width: 290px;
   margin: 0 auto;
   margin-bottom: 70px;
+}
 
-  form fieldset{
-    display: flex;
-    flex-direction: column;
+form {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: -1px;
+  legend {
+    font-family: $alumni;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 32px;
+    color: $base-white;
+    margin-bottom: 36px;
+  }
+
+  input {
     border: none;
-    padding: 0;
-    margin: -1px;
-    legend {
-      font-family: $alumni;
-      font-weight: 600;
-      font-size: 32px;
-      line-height: 32px;
-      color: $base-white;
-      margin-bottom: 36px;
+    font-family: $roboto;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #74819c;
+    padding: 0 4px 3px;
+    margin: 0 0 37px;
+    color: #74819c;
+
+    &:hover {
+      border-color: $base-white;
     }
 
-    input {
-      border: none;
-      font-family: $roboto;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 22px;
-      border: none;
-      background-color: transparent;
-      border-bottom: 1px solid #74819c;
-      padding: 0 0 3px;
-      margin: 0 0 37px;
-      color: #74819c;
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      border: 1px solid $base-white;
+      padding: 10px 4px;
+      margin: -11px 0 30px;
+    }
+
+    &:disabled {
+      opacity: 40%;
     }
   }
 }
@@ -52,5 +68,23 @@
   height: 60px;
   width: 100%;
   padding: 22px;
+
+  &:hover {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: $base-white;
+    border: none;
+  }
+
+  &:focus {
+    background: linear-gradient(97.05deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0, 62, 183, 0.8) 95.31%);
+    color: $base-white;
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: $base-white;
+    border: none;
+  }
 }
 

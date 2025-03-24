@@ -34,6 +34,18 @@
   padding: 14px 22px;
   width: 140px;
   border: 1px solid rgba(16, 38, 84, 0.2);
+  background-color: $base-white;
+
+  &:hover,
+  &:focus {
+    border-color: $base-blue;
+  }
+
+  &:active {
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    color: $base-white;
+    border: none;
+  }
 }
 
 .faq__button--active {
@@ -107,6 +119,26 @@
     bottom: -1px;
     left: -1px;
   }
+
+  &:hover {
+    background-color: $secondary-blue;
+
+    &::after {
+      background-color: $base-white;
+    }
+  }
+
+  &:focus {
+    background-color: #74819c;
+    &::after {
+      background-color: $base-white;
+    }
+  }
+
+  &:disabled {
+    opacity: 30%;
+  }
+
 }
 
 .faq__item--active {

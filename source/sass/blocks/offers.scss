@@ -60,6 +60,20 @@
     color: inherit;
     border-bottom: 1px solid $base-white;
     padding-bottom: 3px;
+
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:focus {
+      border: 1px solid $base-white;
+      padding: 10px;
+      margin: -12px auto -5px;
+    }
+
+    &:disabled {
+      opacity: 30%;
+    }
   }
 }
 
@@ -101,6 +115,20 @@
     color: inherit;
     border-bottom: 1px solid $secondary-blue;
     padding-bottom: 4px;
+
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:focus {
+      border: 1px solid $secondary-blue;
+      padding: 10px;
+      margin: -11px auto -5px;
+    }
+
+    &:disabled {
+      opacity: 30%;
+    }
   }
 
   &:nth-last-child(1) {
