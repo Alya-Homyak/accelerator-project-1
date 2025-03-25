@@ -12,6 +12,16 @@
     border: solid 7px;
     border-image: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%) 7;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 65px;
+    box-sizing: border-box;
+
+    &:hover,
+    &:focus {
+      padding: 58px;
+    }
+  }
 }
 
 .card__title {
@@ -19,6 +29,11 @@
   line-height: 22px;
   font-weight: 700;
   margin: 0 0 19px;
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 22px;
+  }
 }
 
 .card__information {
@@ -26,6 +41,12 @@
   line-height: 22px;
   font-weight: 300;
   margin: 0 0 64px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 82px;
+  }
 }
 
 .card__price {
@@ -62,6 +83,24 @@
     position: absolute;
     bottom: 0;
     z-index: -1;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin-bottom: 22px;
+
+    &::after {
+      width: 30px;
+      height: 42px;
+      background: $base-blue;
+      mask-image: url("/__spritemap#sprite-icon-rub-view");
+      mask-size: 30px 42px;
+      margin-left: 14px;
+    }
+
+    &::before {
+      font-size: 100px;
+    }
   }
 }
 

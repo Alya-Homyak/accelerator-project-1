@@ -1,12 +1,35 @@
 .price {
   padding: 40px 0;
   background-color: $secondary-white;
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 12px;
+      right: 0;
+      width: 275px;
+      height: 328px;
+      background-image: url("../../img/tablet-price-element1.png");
+      background-position: center;
+      background-size: 275px 328px;
+      background-repeat: no-repeat;
+      transform: rotate(-210deg);
+    }
+  }
 }
 
 .price__container {
   width: 290px;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 380px;
+  }
 }
 
 .price__title {
@@ -15,6 +38,12 @@
   line-height: 32px;
   font-weight: 600;
   margin: 0 0 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 36px;
+  }
 }
 
 .price__buttons {
@@ -22,6 +51,11 @@
   justify-content: space-between;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 310px;
+    margin: 0 auto 45px;
+  }
 }
 
 .price__button {
@@ -82,6 +116,11 @@
       border-bottom: 2px solid rgba(237, 2, 51, 1);
     }
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .price__button--active {
@@ -106,6 +145,10 @@
 
   &:nth-last-child(1) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
   }
 }
 
