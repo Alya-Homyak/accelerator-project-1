@@ -503,10 +503,12 @@
         <div class="form__container">
           <form action="https://echo.htmlacademy.ru/" method="post">
             <legend>Бесплатное занятие</legend>
+            <fieldset>
               <label for="name"><span class="visually-hidden">Имя</span></label>
               <input type="text" name="name" id="name" value="Имя" required>
               <label for="tel"><span class="visually-hidden">Телефон</span></label>
               <input type="tel" name="tel" id="tel" value="Телефон" required>
+            </fieldset>
             <button class="form__button" type="submit">отправить</button>
           </form>
         </div>
@@ -516,21 +518,26 @@
             <h2 class="contacts__title">Контакты</h2>
             <address class="contacts__adress adress">
               <div>
-                <p class="adress__title">Адрес:</p>
-                <p class="adress__information">г. Омск, ул. 60 лет Октября, 7</p>
+                <div>
+                  <p class="adress__title">Адрес:</p>
+                  <p class="adress__information">г. Омск, ул. 60 лет Октября, 7</p>
+                </div>
+                <div>
+                  <p class="adress__title">График работы:</p>
+                  <p class="adress__information">Пн-Вс: с 8:00 до 22:00</p>
+                </div>
               </div>
               <div>
-                <p class="adress__title">График работы:</p>
-                <p class="adress__information">Пн-Вс: с 8:00 до 22:00</p>
+                <div>
+                  <p class="adress__title">Телефон:</p>
+                  <a class="adress__information" href="tel:8800555-55-55">8 800 555-55-55</a>
+                </div>
+                <div>
+                  <p class="adress__title">Email:</p>
+                  <a class="adress__information" href="oмск@supergym.ru">oмск@supergym.ru</a>
+                </div>
               </div>
-              <div>
-                <p class="adress__title">Телефон:</p>
-                <a class="adress__information" href="tel:8800555-55-55">8 800 555-55-55</a>
-              </div>
-              <div>
-                <p class="adress__title">Email:</p>
-                <a class="adress__information" href="oмск@supergym.ru">oмск@supergym.ru</a>
-              </div>
+
             </address>
           </div>
         </div>

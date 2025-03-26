@@ -3,14 +3,22 @@
   color: $base-blue;
   padding: 41px 0 39px;
   margin: 0 -15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 43px;
+  }
 }
 
 .contacts__container {
   padding: 0 15px;
   width: 290px;
   margin: 0 auto;
-}
 
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    text-align: center;
+  }
+}
 
 .contacts__title {
   font-family: $alumni;
@@ -18,4 +26,10 @@
   font-size: 32px;
   line-height: 24px;
   margin: 0 0 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 38px;
+  }
 }
