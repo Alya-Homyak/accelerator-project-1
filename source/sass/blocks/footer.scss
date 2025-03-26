@@ -2,12 +2,29 @@
   background-color: #030a1a;
   color: $base-blue;
   padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px;
+
+    svg {
+      width: 110px;
+      height: 22px;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .footer__container {
   padding: 0 15px;
   width: 290px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer__logo {
@@ -16,10 +33,16 @@
 
 .footer__navigation {
   background-color: #030a1a;
+  display: flex;
 }
 
 .footer__social {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    gap: 15px;
+  }
 }
 
 .footer__link {
@@ -47,6 +70,7 @@
 
   &:hover {
     background-color: #74819c;
+
     &::after {
       background: $base-white;
     }
@@ -54,6 +78,7 @@
 
   &:focus {
     background-color: $price-blue;
+
     &::after {
       background: $base-white;
     }
@@ -61,12 +86,16 @@
 
   &:active {
     background-color: $base-blue;
+
     &::after {
       background: $base-white;
     }
   }
-}
 
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
 
 
 .footer__link-vk::after {

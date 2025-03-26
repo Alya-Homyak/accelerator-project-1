@@ -26,7 +26,7 @@
 .hero__titles {
   font-family: $alumni;
   text-align: right;
-  align-self:self-start;
+  align-self: self-start;
 
   @media (min-width: $tablet-width) {
     margin: 32px 30px 0 0;
@@ -45,7 +45,6 @@
     line-height: 42px;
     margin-bottom: 9px;
   }
-
 }
 
 .hero__title {
@@ -130,6 +129,7 @@
 
 .hero__main-image {
   display: none;
+
   @media (min-width: $tablet-width) {
     display: block;
     width: 324px;

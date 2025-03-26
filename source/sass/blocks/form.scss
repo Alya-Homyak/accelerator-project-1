@@ -26,13 +26,13 @@ form {
   padding: 0;
   margin: -1px;
 
-  legend {
+  h3 {
     font-family: $alumni;
     font-weight: 600;
     font-size: 32px;
     line-height: 32px;
     color: $base-white;
-    margin-bottom: 36px;
+    margin: 0 0 36px;
   }
 
   fieldset {
@@ -42,7 +42,6 @@ form {
   }
 
   input {
-    border: none;
     font-family: $roboto;
     font-weight: 300;
     font-size: 14px;
@@ -74,7 +73,7 @@ form {
   @media (min-width: $tablet-width) {
     display: block;
 
-    legend {
+    h3 {
       font-size: 54px;
       line-height: 54px;
       margin: 0 auto 38px;
@@ -131,4 +130,3 @@ form {
     width: 440px;
   }
 }
-

@@ -164,6 +164,7 @@
 
   &:focus {
     background-color: #74819c;
+
     &::after {
       background-color: $base-white;
     }
@@ -185,7 +186,6 @@
       left: -1px;
     }
   }
-
 }
 
 .faq__item--active {
