@@ -146,7 +146,7 @@
     height: 30px;
     background-color: $secondary-blue;
     mask-image: url("/__spritemap#sprite-icon-plus-view");
-    mask-size: 14px 14px;
+    mask-size: 20px 20px;
     mask-repeat: no-repeat;
     mask-position: center;
     position: absolute;
@@ -223,7 +223,7 @@
     height: 40px;
 
     &::after {
-      mask-size: 20px 1px;
+      mask-size: 20px 2px;
     }
   }
 }
