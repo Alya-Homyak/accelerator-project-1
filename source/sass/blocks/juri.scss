@@ -1,5 +1,10 @@
 .juri {
   padding: 40px 0;
+  background-color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0 60px;
+  }
 }
 
 .juri__container {
@@ -7,7 +12,12 @@
   text-align: center;
   margin: 0 auto;
   width: 260px;
-  background-color: $base-white;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
+    width: 678px;
+  }
 }
 
 .juri__title {
@@ -15,11 +25,70 @@
   line-height: 32px;
   font-weight: 300;
   margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 46px;
+  }
+}
+
+.juri__swiper {
+  display: flex;
+  margin: 0 auto;
+}
+
+.juri__button {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 60px;
+    border: none;
+    position: relative;
+    background-color: $base-white;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: auto;
+      mask-size: 18px 32px;
+      mask-repeat: no-repeat;
+      mask-position: 37px center;
+      background: $base-blue;
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+}
+
+.juri__button--previous {
+  &::after {
+    mask-image: url("/__spritemap#sprite-icon-arrow-view");
+    rotate: 180deg;
+  }
+}
+
+.juri__button--next {
+  &::after {
+    mask-image: url("/__spritemap#sprite-icon-arrow-view");
+  }
+}
+
+.juri__list {
+  display: flex;
+  column-gap: 40px;
 }
 
 .juri__item {
   position: relative;
   text-align: center;
+  width: 260px;
+  margin: 0 auto;
 
   &:nth-child(n) {
     display: none;
@@ -27,6 +96,16 @@
 
   &:nth-child(1) {
     display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      display: block;
+    }
   }
 }
 

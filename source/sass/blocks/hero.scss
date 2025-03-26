@@ -4,6 +4,10 @@
   font-family: $roboto;
   color: $base-white;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 84px 45px 100px;
+  }
 }
 
 .hero__container {
@@ -12,11 +16,21 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-end;
+
+  @media (min-width: $tablet-width) {
+    width: 678px;
+    position: relative;
+  }
 }
 
 .hero__titles {
   font-family: $alumni;
   text-align: right;
+  align-self: self-start;
+
+  @media (min-width: $tablet-width) {
+    margin: 32px 30px 0 0;
+  }
 }
 
 .hero__sup-title {
@@ -24,6 +38,13 @@
   line-height: 32px;
   font-weight: 600;
   margin: 0 0 16px;
+
+  @media (min-width: $tablet-width) {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 9px;
+  }
 }
 
 .hero__title {
@@ -33,6 +54,13 @@
   text-transform: uppercase;
   margin: 0;
   letter-spacing: 1px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 2px;
+    margin-right: -2px;
+  }
 }
 
 .hero__list {
@@ -41,6 +69,12 @@
   line-height: 20px;
   font-weight: 400;
   flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    line-height: 22px;
+    align-self: center;
+    margin-top: 2px;
+  }
 }
 
 .hero__button {
@@ -62,6 +96,14 @@
   width: 290px;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    width: 185px;
+    height: 56px;
+    bottom: 31px;
+    left: auto;
+    right: 354px;
+  }
+
 
   &:hover {
     background-color: $base-white;
@@ -82,5 +124,16 @@
   &:disabled {
     opacity: 50%;
     color: $base-white;
+  }
+}
+
+.hero__main-image {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 324px;
+    height: 390px;
+    flex-shrink: 0;
   }
 }

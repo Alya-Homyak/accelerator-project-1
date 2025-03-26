@@ -1,6 +1,10 @@
 .offers {
   padding: 41px 0 40px;
   background-color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0;
+  }
 }
 
 .offers__container {
@@ -11,6 +15,11 @@
   font-weight: 300;
   color: $secondary-blue;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
+    width: 678px;
+  }
 }
 
 .offers__title {
@@ -19,6 +28,19 @@
   line-height: 32px;
   font-weight: 600;
   margin: 0 0 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 35px;
+  }
+}
+
+.offers__content {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 35px;
+  }
 }
 
 .offers__promo {
@@ -60,11 +82,71 @@
     color: inherit;
     border-bottom: 1px solid $base-white;
     padding-bottom: 3px;
+
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:focus {
+      border: 1px solid $base-white;
+      padding: 10px;
+      margin: -12px auto -5px;
+    }
+
+    &:disabled {
+      opacity: 30%;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 40px 25px;
+    text-align: left;
+    position: relative;
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0 0 30px;
+    }
+
+    p:nth-child(1) {
+      font-size: 24px;
+      line-height: 24px;
+      margin: 0 0 20px;
+    }
+
+    h3 {
+      font-size: 70px;
+      line-height: 70px;
+      margin: 0 0 40px;
+    }
+
+    a {
+      position: absolute;
+      bottom: 39px;
+      left: 25px;
+
+      &:focus {
+        left: 14px;
+      }
+    }
   }
 }
 
 .offers__image {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    flex-shrink: 0;
+  }
+}
+
+.offers__sections {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .offers__section {
@@ -101,9 +183,56 @@
     color: inherit;
     border-bottom: 1px solid $secondary-blue;
     padding-bottom: 4px;
+
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:focus {
+      border: 1px solid $secondary-blue;
+      padding: 10px;
+      margin: -11px auto -5px;
+    }
+
+    &:disabled {
+      opacity: 30%;
+    }
   }
 
   &:nth-last-child(1) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 20px 40px;
+    margin: 0;
+    text-align: left;
+    width: 324px;
+    position: relative;
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 30px;
+    }
+
+    h3 {
+      font-size: 26px;
+      line-height: 26px;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+
+    a {
+      margin: 0;
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+
+      &:focus {
+        bottom: 19px;
+        left: 9px;
+      }
+    }
   }
 }

@@ -7,7 +7,8 @@
   margin: 0;
 
   div {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
+
     &:nth-last-child(1) {
       margin-bottom: 0;
     }
@@ -17,13 +18,48 @@
     text-decoration: none;
     color: inherit;
   }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    column-gap: 60px;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 1px;
+      height: auto;
+      top: -2px;
+      bottom: 17px;
+      right: 219px;
+      background-color: rgba(116, 129, 156, 1);
+    }
+
+    div {
+      margin-bottom: 16px;
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .adress__title {
   font-size: 20px;
   margin: 0 0 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .adress__information {
+  line-height: 22px;
   margin: 0;
 }
