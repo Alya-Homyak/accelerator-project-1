@@ -27,7 +27,10 @@
   font-family: $alumni;
   text-align: right;
   align-self:self-start;
-  margin: 32px 30px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 32px 30px 0 0;
+  }
 }
 
 .hero__sup-title {

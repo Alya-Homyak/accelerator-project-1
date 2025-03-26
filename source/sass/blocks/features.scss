@@ -49,6 +49,10 @@
   }
 }
 
+.features__item--blue {
+  grid-column: 1 / 3;
+}
+
 .features__card {
   font-family: $roboto;
   font-size: 14px;
@@ -111,9 +115,5 @@
     line-height: 22px;
     font-weight: 700;
     margin: 0 0 20px;
-  }
-
-  @media (min-width: $tablet-width) {
-    grid-area: 2/1/2/4;
   }
 }
