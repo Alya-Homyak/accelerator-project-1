@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding: 30px 0 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
 }
 
 .juri__container {
@@ -13,10 +17,14 @@
   margin: 0 auto;
   width: 260px;
 
-
   @media (min-width: $tablet-width) {
     padding: 0 45px;
     width: 678px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 100%;
   }
 }
 
@@ -53,6 +61,22 @@
       display: block;
       width: 60px;
       height: auto;
+      mask-size: 18px 32px;
+      mask-repeat: no-repeat;
+      mask-position: 37px center;
+      background: $base-blue;
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 103px;
+    &::after {
+      width: 103px;
       mask-size: 18px 32px;
       mask-repeat: no-repeat;
       mask-position: 37px center;
@@ -104,6 +128,15 @@
 
     &:nth-child(1),
     &:nth-child(2) {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
       display: block;
     }
   }
