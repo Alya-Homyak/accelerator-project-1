@@ -8,6 +8,10 @@
   @media (min-width: $tablet-width) {
     padding: 84px 45px 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 116px 0 120px;
+  }
 }
 
 .hero__container {
@@ -21,6 +25,12 @@
     width: 678px;
     position: relative;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 175px 0 250px;
+    width: 941px;
+    margin: 0;
+  }
 }
 
 .hero__titles {
@@ -30,6 +40,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 32px 30px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 52px 57px 0 0;
   }
 }
 
@@ -44,6 +58,12 @@
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 42px;
   }
 }
 
@@ -60,6 +80,12 @@
     line-height: 85px;
     letter-spacing: 2px;
     margin-right: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 92px;
+    line-height: 110px;
+    letter-spacing: 4px;
   }
 }
 
@@ -104,6 +130,14 @@
     right: 354px;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 270px;
+    height: 66px;
+    padding: 27px;
+    left: -13px;
+    bottom: 52px;
+  }
+
 
   &:hover {
     background-color: $base-white;
@@ -135,5 +169,13 @@
     width: 324px;
     height: 390px;
     flex-shrink: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 500px;
+    height: 524px;
+    flex-shrink: 0;
+    margin: 0;
   }
 }
