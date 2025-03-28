@@ -17,7 +17,7 @@
 .form__container {
   width: 290px;
   margin: 0 auto;
-  margin-bottom: 70px;
+  margin-bottom: 71px;
 
   @media (min-width: $tablet-width) {
     width: 440px;
@@ -52,12 +52,12 @@ form {
 
   fieldset {
     border: none;
-    margin: 0;
+    margin: 0 0 -1px;
     padding: 0;
   }
 
   input {
-    width: 100%;
+    width: 290px;
     font-family: $roboto;
     font-weight: 300;
     font-size: 14px;
@@ -65,8 +65,8 @@ form {
     border: none;
     background-color: transparent;
     border-bottom: 1px solid #74819c;
-    padding: 0 4px 3px;
-    margin: 0 0 37px;
+    padding: 0 0 3px 0;
+    margin: 0 0 37px 1px;
     color: #74819c;
 
     &:hover {
@@ -97,14 +97,14 @@ form {
 
     fieldset {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       margin-bottom: 35px;
     }
 
     input {
       width: 205px;
       padding: 0 0 3px;
-      margin: 0;
+      margin: 0 31px 0 0;
     }
   }
 
@@ -113,7 +113,7 @@ form {
 
     fieldset {
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       margin-bottom: 35px;
     }
 
@@ -140,8 +140,9 @@ form {
   color: $base-white;
   background-color: $base-blue;
   height: 60px;
-  width: 100%;
+  width: 290px;
   padding: 22px;
+  margin-left: 1px;
 
   &:hover {
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
@@ -164,11 +165,12 @@ form {
   @media (min-width: $tablet-width) {
     height: 66px;
     width: 440px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     height: 66px;
-    width: 476px;
-    margin-left: 2px;
+    width: 477px;
+    margin-left: 1px;
   }
 }
