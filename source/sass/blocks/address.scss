@@ -46,6 +46,14 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 120px;
+
+    &::after {
+      right: 238px;
+    }
+  }
 }
 
 .adress__title {

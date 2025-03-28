@@ -2,8 +2,15 @@
   background-color: $base-blue;
   padding: 72px 15px 0;
 
+
   @media (min-width: $tablet-width) {
     padding: 60px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -16,6 +23,14 @@
     width: 440px;
     text-align: center;
     margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 103px;
+    text-align: left;
+    width: 683px;
+    box-sizing: border-box;
+    margin-bottom: 0;
   }
 }
 
@@ -92,6 +107,26 @@ form {
       margin: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    fieldset {
+      display: flex;
+      justify-content: start;
+      margin-bottom: 35px;
+    }
+
+    input {
+      width: 223.5px;
+      padding: 0 0 3px;
+      margin: 0 30px 0 0;
+    }
+
+    #tel {
+      margin-right: 0;
+    }
+  }
 }
 
 .form__button {
@@ -129,5 +164,11 @@ form {
   @media (min-width: $tablet-width) {
     height: 66px;
     width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 66px;
+    width: 476px;
+    margin-left: 2px;
   }
 }
