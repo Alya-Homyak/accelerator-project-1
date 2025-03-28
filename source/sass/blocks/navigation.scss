@@ -23,6 +23,10 @@
       line-height: 22px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 82px;
+  }
 }
 
 .navigation__item {
