@@ -4,4 +4,5 @@
 // import 'swiper/css';
 
 import './price';
+import './faq';
 

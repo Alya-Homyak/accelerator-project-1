@@ -31,6 +31,14 @@
   }
 }
 
+.faq__item-container {
+  display: none;
+}
+
+.faq__item-container--active {
+  display: block;
+}
+
 .faq__title {
   font-size: 32px;
   line-height: 32px;
@@ -232,11 +240,16 @@
 }
 
 .faq__item--active {
-  row-gap: 20px;
 
   p {
     margin: 0;
     display: block;
+    animation: sliding-vertically 1.5s forwards;
+
+  @keyframes sliding-vertically {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
   }
 
   @media (min-width: $tablet-width) {
@@ -250,7 +263,7 @@
   }
 }
 
-.faq__item--active .faq__item-button {
+.faq__item-button--active {
   display: block;
   box-sizing: border-box;
   width: 30px;
