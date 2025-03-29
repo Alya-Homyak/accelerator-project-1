@@ -75,6 +75,7 @@
 
   @media (min-width: $desktop-width) {
     width: 103px;
+
     &::after {
       width: 103px;
       mask-size: 18px 32px;

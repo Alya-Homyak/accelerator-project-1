@@ -157,6 +157,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 40px 45px;
+
     p:nth-child(1) {
       font-size: 26px;
       line-height: 26px;
@@ -282,6 +283,7 @@
     width: auto;
     padding: 20px 20px 50px;
     margin-bottom: 30px;
+
     &:nth-last-child(1) {
       margin-bottom: 0;
     }
