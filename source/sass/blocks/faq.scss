@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 101px;
+    padding: 100px 0;
   }
 }
 
@@ -132,6 +132,7 @@
   color: $secondary-blue;
   text-align: left;
   padding: 20px 0;
+  row-gap: 20px;
 
   h3 {
     font-size: 20px;
@@ -148,6 +149,7 @@
 
   &:nth-last-child(1) {
     border-bottom: 1px solid #74819c;
+    padding-bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -160,6 +162,10 @@
       font-size: 22px;
       line-height: 22px;
       margin: 0;
+    }
+
+    &:nth-last-child(1) {
+      padding-bottom: 3px;
     }
   }
 
@@ -244,7 +250,7 @@
   p {
     margin: 0;
     display: block;
-    animation: sliding-vertically 1.5s forwards;
+    animation: sliding-vertically 1s forwards;
 
   @keyframes sliding-vertically {
     0% {opacity: 0;}
