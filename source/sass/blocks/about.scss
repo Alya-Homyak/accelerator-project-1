@@ -4,6 +4,42 @@
   @media (min-width: $tablet-width) {
     padding: 60px 0 85px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 120px 0 240px;
+  }
+
+  p {
+    font-family: $roboto;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    margin: 0 0 34px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      padding: 0 88px;
+      margin-bottom: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      margin-bottom: 8px;
+    }
+  }
+
+  span {
+    display: none;
+    font-family: $roboto;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 300;
+    }
+  }
 }
 
 .about__container {
@@ -14,6 +50,22 @@
     width: 678px;
     text-align: center;
     position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
+    padding: 0 103px;
+    margin: 0;
+    display: flex;
+    text-align: left;
+  }
+}
+
+.about__content {
+  @media (min-width: $desktop-width) {
+    width: 355px;
+    text-align: left;
+    margin-right: 145px;
   }
 }
 
@@ -29,6 +81,12 @@
     line-height: 42px;
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 25px;
+  }
 }
 
 .about__sup-title {
@@ -42,26 +100,24 @@
     font-size: 20px;
     margin-bottom: 36px;
   }
-}
 
-.about p {
-  font-family: $roboto;
-  font-size: 14px;
-  line-height: 22px;
-  font-weight: 300;
-  margin: 0 0 34px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
-    padding: 0 88px;
-    margin-bottom: 36px;
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 95px;
   }
 }
 
 .about__main-image {
   margin: 0 -15px 36px;
   display: block;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+  }
 }
 
 .about__video-container {
@@ -71,6 +127,14 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: -85px;
+    left: 0;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    position: absolute;
+    bottom: -115px;
     left: 0;
     right: 0;
   }
@@ -181,6 +245,32 @@
     &::after {
       background: $base-blue;
       opacity: 40%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 98px;
+    height: 98px;
+    bottom: 66px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &::before {
+      width: 72px;
+      height: 72px;
+      bottom: 11px;
+      left: 11px;
+      position: absolute;
+    }
+
+    &::after {
+      width: 72px;
+      height: 72px;
+      bottom: 12px;
+      left: 13px;
+      mask-image: url("/__spritemap#sprite-icon-play-view");
+      mask-size: 17px 17px;
+      mask-position: center;
     }
   }
 }

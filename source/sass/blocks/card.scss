@@ -35,6 +35,12 @@
     line-height: 24px;
     margin-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
 }
 
 .card__information {
@@ -47,6 +53,10 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
   }
 }
 
@@ -102,6 +112,10 @@
     &::before {
       font-size: 100px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
   }
 }
 

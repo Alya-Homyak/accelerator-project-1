@@ -39,11 +39,23 @@
     }
 
     div {
-      margin-bottom: 16px;
+      margin-bottom: 14px;
 
       &:nth-last-child(1) {
         margin-bottom: 0;
       }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 120px;
+
+    &::after {
+      right: 238px;
+    }
+
+    div {
+      margin-bottom: 14px;
     }
   }
 }
@@ -53,7 +65,7 @@
   margin: 0 0 13px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     font-size: 24px;
     line-height: 24px;
   }
