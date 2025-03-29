@@ -44,7 +44,10 @@
 .juri__swiper {
   display: flex;
   margin: 0 auto;
-  width: 1366px;
+
+  @media (min-width: $desktop-width) {
+    width: 1366px;
+  }
 }
 
 .juri__button {
