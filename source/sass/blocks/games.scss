@@ -13,6 +13,8 @@
 }
 
 .games__container {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 678px;
     padding: 0 45px;
@@ -22,7 +24,6 @@
   @media (min-width: $desktop-width) {
     padding: 0 103px;
     width: 1160px;
-    margin: 0 auto;
   }
 }
 

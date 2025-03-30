@@ -61,7 +61,6 @@
   height: auto;
   z-index: 1;
 
-
   @media (min-width: $tablet-width) {
     display: block;
     width: 60px;
@@ -124,7 +123,6 @@
     mask-image: url("/__spritemap#sprite-icon-arrow-view");
   }
 }
-
 
 .juri__item {
   position: relative;

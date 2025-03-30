@@ -15,6 +15,7 @@
 .features__container {
   text-align: center;
   width: 320px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 0 45px;
@@ -24,7 +25,6 @@
   @media (min-width: $desktop-width) {
     padding: 0 103px;
     width: 1160px;
-    margin: 0 auto;
   }
 }
 

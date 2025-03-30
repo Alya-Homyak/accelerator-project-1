@@ -28,7 +28,9 @@ function initSwipers() {
 
   new Swiper('.reviews__swiper', {
     loop: true,
+    autoHeigh: true,
     slidesPerView: 1,
+    spaceBetween: 0,
     modules: [Navigation],
     navigation: {
       nextEl: '.reviews__button--next',
