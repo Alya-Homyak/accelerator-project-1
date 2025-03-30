@@ -208,7 +208,7 @@
                 </ul>
               </div>
             </li>
-            <li class="juri__item">
+            <li class="juri__item swiper-slide">
               <div class="juri__item-container">
                 <img class="juri__image" width="260" height="300" src="./img/card-2@1x.jpg" srcset="./img/card-2@2x.jpg 2x" alt="Алексей Лавров">
                 <p class="juri__name">Алексей Лавров</p>
@@ -223,7 +223,7 @@
                 </ul>
               </div>
             </li>
-            <li class="juri__item">
+            <li class="juri__item swiper-slide">
               <div class="juri__item-container">
                 <img class="juri__image" width="260" height="300" src="./img/card-3@1x.jpg" srcset="./img/card-3@2x.jpg 2x" alt="Александр Пашков">
                 <p class="juri__name">Александр Пашков</p>
@@ -238,7 +238,7 @@
                 </ul>
               </div>
             </li>
-            <li class="juri__item">
+            <li class="juri__item swiper-slide">
               <div class="juri__item-container">
                 <img class="juri__image" width="260" height="300" src="./img/card-4@1x.jpg" srcset="./img/card-4@2x.jpg 2x" alt="Мария Кетова">
                 <p class="juri__name">Мария Кетова</p>
@@ -253,7 +253,7 @@
                 </ul>
               </div>
             </li>
-            <li class="juri__item">
+            <li class="juri__item swiper-slide">
               <div class="juri__item-container">
                 <img class="juri__image" width="260" height="300" src="./img/card-1@1x.jpg" srcset="./img/card-1@2x.jpg 2x" alt="Анна Павлова">
                 <p class="juri__name">Анна Павлова</p>
@@ -268,7 +268,7 @@
                 </ul>
               </div>
             </li>
-            <li class="juri__item">
+            <li class="juri__item swiper-slide">
               <div class="juri__item-container">
                 <img class="juri__image" width="260" height="300" src="./img/card-4@1x.jpg" srcset="./img/card-4@2x.jpg 2x" alt="Мария Кетова">
                 <p class="juri__name">Мария Кетова</p>
@@ -283,7 +283,7 @@
                 </ul>
               </div>
             </li>
-            <li class="juri__item">
+            <li class="juri__item swiper-slide">
               <div class="juri__item-container">
                 <img class="juri__image" width="260" height="300" src="./img/card-3@1x.jpg" srcset="./img/card-3@2x.jpg 2x" alt="Александр Пашков">
                 <p class="juri__name">Александр Пашков</p>
@@ -298,7 +298,7 @@
                 </ul>
               </div>
             </li>
-            <li class="juri__item">
+            <li class="juri__item swiper-slide">
               <div class="juri__item-container">
                 <img class="juri__image" width="260" height="300" src="./img/card-2@1x.jpg" srcset="./img/card-2@2x.jpg 2x" alt="Алексей Лавров">
                 <p class="juri__name">Алексей Лавров</p>
@@ -524,7 +524,7 @@
       <section class="reviews" data-test="reviews">
         <div class="reviews__container">
           <h2 class="reviews__title">Отзывы</h2>
-          <div class="reviews__content">
+          <div class="reviews__content reviews__swiper">
             <button class="reviews__button reviews__button--prev" type="button"><span class="visually-hidden">назад</span></button>
             <ul class="reviews__list no-list">
               <li class="reviews__item">
@@ -538,32 +538,39 @@
                 <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
                 </div>
               </li>
-              <li class="reviews__item">
-                <picture>
-                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.jpg 1x, ./img/tablet-review-img@2x.jpg 2x" width="80" height="80">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.webp 1x, ./img/tablet-review-img@2x.webp 2x" width="80" height="80">
-                  <img width="68" height="68" src="./img/mobile-review-img@1x.jpg" srcset="./img/mobile-review-img@2x.jpg 2x" alt="Фото клиента">
-                </picture>
-                <h3>Анна Орлова</h3>
-                <p>«Отличный тренажерный зал! Просторное помещение, современное оборудование и чистота на высшем уровне. Тренеры всегда готовы помочь, атмосфера мотивирующая. Очень удобно, что есть зона для растяжки и кардиотренировок. Рекомендую!»</p>
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__card">
+                  <picture>
+                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.jpg 1x, ./img/tablet-review-img@2x.jpg 2x" width="80" height="80">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.webp 1x, ./img/tablet-review-img@2x.webp 2x" width="80" height="80">
+                    <img width="68" height="68" src="./img/mobile-review-img@1x.jpg" srcset="./img/mobile-review-img@2x.jpg 2x" alt="Фото клиента">
+                  </picture>
+                  <h3>Анна Орлова</h3>
+                  <p>«Отличный тренажерный зал! Просторное помещение, современное оборудование и чистота на высшем уровне. Тренеры всегда готовы помочь, атмосфера мотивирующая. Очень удобно, что есть зона для растяжки и кардиотренировок. Рекомендую!»</p>
+                </div>
               </li>
-              <li class="reviews__item">
-                <picture>
-                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.jpg 1x, ./img/tablet-review-img@2x.jpg 2x" width="80" height="80">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.webp 1x, ./img/tablet-review-img@2x.webp 2x" width="80" height="80">
-                  <img width="68" height="68" src="./img/mobile-review-img@1x.jpg" srcset="./img/mobile-review-img@2x.jpg 2x" alt="Фото клиента">
-                </picture>
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__card">
+                  <picture>
+                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.jpg 1x, ./img/tablet-review-img@2x.jpg 2x" width="80" height="80">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.webp 1x, ./img/tablet-review-img@2x.webp 2x" width="80" height="80">
+                    <img width="68" height="68" src="./img/mobile-review-img@1x.jpg" srcset="./img/mobile-review-img@2x.jpg 2x" alt="Фото клиента">
+                  </picture>
                 <h3>Анна Орлова</h3>
                 <p>«Лучший зал в городе! Приятный персонал, качественные тренажёры и хорошая вентиляция – заниматься комфортно в любое время. Отдельный плюс – удобные раздевалки и душевые. Если хотите добиться результата, вам сюда!»</p>
+                </div>
               </li>
-              <li class="reviews__item">
-                <picture>
-                  <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.jpg 1x, ./img/tablet-review-img@2x.jpg 2x" width="80" height="80">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.webp 1x, ./img/tablet-review-img@2x.webp 2x" width="80" height="80">
-                  <img width="68" height="68" src="./img/mobile-review-img@1x.jpg" srcset="./img/mobile-review-img@2x.jpg 2x" alt="Фото клиента">
-                </picture>
+              <li class="reviews__item swiper-slide">
+                <div class="reviews__card">
+                  <picture>
+                    <source type="image/jpeg" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.jpg 1x, ./img/tablet-review-img@2x.jpg 2x" width="80" height="80">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="./img/tablet-review-img@1x.webp 1x, ./img/tablet-review-img@2x.webp 2x" width="80" height="80">
+                    <img width="68" height="68" src="./img/mobile-review-img@1x.jpg" srcset="./img/mobile-review-img@2x.jpg 2x" alt="Фото клиента">
+                  </picture>
                 <h3>Анна Орлова</h3>
                 <p>«Хороший спортзал, есть всё необходимое для разных видов тренировок. Иногда в пиковые часы бывает многолюдно, но в целом отличный вариант для поддержания формы.»</p>
+                </div>
+
               </li>
             </ul>
             <button class="reviews__button reviews__button--next" type="button"><span class="visually-hidden">вперед</span></button>
