@@ -42,22 +42,31 @@
 }
 
 .juri__swiper {
-  display: flex;
   margin: 0 auto;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 560px;
+    padding: 0 59px;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 1366px;
+    width: 1160px;
+    padding: 0 103px;
   }
 }
 
 .juri__button {
   display: none;
+  height: auto;
+  z-index: 1;
+
 
   @media (min-width: $tablet-width) {
     display: block;
     width: 60px;
     border: none;
-    position: relative;
+    position: absolute;
     background-color: $base-white;
 
     &::after {
@@ -96,6 +105,10 @@
 }
 
 .juri__button--previous {
+  left: 0;
+  top: 0;
+  bottom: 0;
+
   &::after {
     mask-image: url("/__spritemap#sprite-icon-arrow-view");
     rotate: 180deg;
@@ -103,48 +116,29 @@
 }
 
 .juri__button--next {
+  right: 0;
+  top: 0;
+  bottom: 0;
+
   &::after {
     mask-image: url("/__spritemap#sprite-icon-arrow-view");
   }
 }
 
-.juri__list {
-  display: flex;
-  column-gap: 40px;
-}
 
 .juri__item {
   position: relative;
   text-align: center;
   width: 260px;
-  margin: 0 auto;
-
-  &:nth-child(n) {
-    display: none;
-  }
-
-  &:nth-child(1) {
-    display: block;
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 54px;
     line-height: 54px;
-
-    &:nth-child(1),
-    &:nth-child(2) {
-      display: block;
-    }
   }
+}
 
-  @media (min-width: $desktop-width) {
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3),
-    &:nth-child(4) {
-      display: block;
-    }
-  }
+.juri__image {
+  width: 100%;
 }
 
 .juri__active {
@@ -203,8 +197,8 @@
   }
 }
 
-.juri__item-container:hover ~ .juri__active,
-.juri__item-container:focus ~ .juri__active {
+.juri__item-container:hover~.juri__active,
+.juri__item-container:focus~.juri__active {
   display: block;
 }
 

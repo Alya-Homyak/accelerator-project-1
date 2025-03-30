@@ -1,45 +1,39 @@
 // https://swiperjs.com/get-started#installation
 import Swiper from 'swiper';
+import { Navigation } from 'swiper/modules';
 import './about';
 import './price';
 import './faq';
 
-// function initSwipers() {
-//   const juriSwiper = new Swiper('.juri__swiper', {
-//     loop: true,
-//     setWrapperSize: true,
-//     width: 'auto',
-//     slidesPerView: 'auto',
-//     spaceBetween: 0,
-//     simulateTouch: true,
-//     touchRatio: 1,
-//     grabCursor: true,
-//     freeMode: true,
-//     speed: 0,
-//     oneWayMovement: false,
-//     navigation: {
-//       nextEl: '.juri__button--next',
-//       prevEl: '.juri__button--previous',
-//     },
-//   });
+function initSwipers() {
+  new Swiper('.juri__swiper', {
+    loop: true,
+    slidesPerView: 1,
+    modules: [Navigation],
+    breakpoints: {
+      678: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+      },
+      1366: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      }
+    },
+    navigation: {
+      nextEl: '.juri__button--next',
+      prevEl: '.juri__button--previous',
+    },
+  });
 
-//   const reviewSwiper = new Swiper('.reviews__swiper', {
-//     loop: true,
-//     setWrapperSize: true,
-//     width: 'auto',
-//     slidesPerView: 'auto',
-//     spaceBetween: 0,
-//     simulateTouch: true,
-//     touchRatio: 1,
-//     grabCursor: true,
-//     freeMode: true,
-//     speed: 0,
-//     oneWayMovement: false,
-//     navigation: {
-//       nextEl: '.juri__button--next',
-//       prevEl: '.juri__button--previous',
-//     },
-//   });
-// }
-
-// document.addEventListener('DOMContentLoaded', initSwipers);
+  new Swiper('.reviews__swiper', {
+    loop: true,
+    slidesPerView: 1,
+    modules: [Navigation],
+    navigation: {
+      nextEl: '.reviews__button--next',
+      prevEl: '.reviews__button--prev',
+    },
+  });
+}
+document.addEventListener('DOMContentLoaded', initSwipers);
