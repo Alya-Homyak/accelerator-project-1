@@ -59,7 +59,7 @@
           </picture>
 
           <div class="about__video-container">
-            <iframe class="about__video" width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=y3TMWfPSK7eoqeBS" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
+            <iframe class="about__video" width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=j-uixdShC64SU4wE&autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy"></iframe>
             <picture class="about__video-image">
               <source type="image/jpeg" media="(min-width: 1366px)" srcset="./img/desktop-video@1x.jpg 1x, ./img/desktop-video@2x.jpg 2x" width="360" height="230">
               <source type="image/webp" media="(min-width: 1366px)" srcset="./img/desktop-video@1x.webp 1x, ./img/desktop-video@2x.webp 2x" width="360" height="230">
@@ -580,9 +580,9 @@
             <fieldset>
               <legend><span class="visually-hidden">Бесплатное занятие</span></legend>
               <label for="name"><span class="visually-hidden">Имя</span></label>
-              <input class="name" type="text" name="name" id="name" placeholder="Имя" required>
+              <input class="name" type="text" name="name" id="name" placeholder="Имя" required pattern="(^[A-Z][a-z]{1,14} [A-Z]{1}[a-z]{1,14}$)|(^[А-Я]{1}[а-я]{1,14} [А-Я]{1}[а-я]{1,14}$)">
               <label for="tel"><span class="visually-hidden">Телефон</span></label>
-              <input class="tel" type="tel" name="tel" id="tel" placeholder="Телефон" required>
+              <input class="tel" type="tel" name="tel" id="tel" placeholder="Телефон" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
             </fieldset>
             <button class="form__button" type="submit">отправить</button>
           </form>
