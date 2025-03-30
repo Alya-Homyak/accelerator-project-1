@@ -55,7 +55,7 @@
   @media (min-width: $desktop-width) {
     width: 1160px;
     padding: 0 103px;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     text-align: left;
   }
@@ -122,21 +122,24 @@
 
 .about__video-container {
   position: relative;
+  height: 170px;
   margin: 0 -15px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: -85px;
-    left: 0;
-    right: 0;
+    width: 270px;
+    height: 170px;
+    left: 219px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    position: absolute;
     bottom: -115px;
-    left: 0;
-    right: 0;
+    width: 360px;
+    height: 230px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -144,6 +147,25 @@
   object-fit: contain;
   display: none;
   border: none;
+}
+
+.about__video--active {
+  display: block;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about__video--active ~ .about__video-image{
+  display: none;
+}
+
+.about__video--active ~ .about__play{
+  display: none;
 }
 
 
