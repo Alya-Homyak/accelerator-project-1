@@ -18,11 +18,6 @@
   width: 260px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 45px;
-    width: 678px;
-  }
-
-  @media (min-width: $desktop-width) {
     padding: 0;
     width: 100%;
   }
@@ -47,7 +42,7 @@
 
   @media (min-width: $tablet-width) {
     width: 560px;
-    padding: 0 59px;
+    padding: 0 104px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,9 +56,50 @@
   height: auto;
   z-index: 1;
 
+  &:hover {
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid;
+      left: 35px;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }
+
+  &:focus {
+    &::before {
+      background-color: #e8e8e8;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $base-blue;
+    }
+
+    &::after {
+      background: $base-white;
+    }
+  }
+
+  &:disabled {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      background: rgba(16, 38, 84, 0.3);
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
-    width: 60px;
+    width: 103px;
     border: none;
     position: absolute;
     background-color: $base-white;
@@ -71,11 +107,11 @@
     &::after {
       content: "";
       display: block;
-      width: 60px;
+      width: 103px;
       height: auto;
       mask-size: 18px 32px;
       mask-repeat: no-repeat;
-      mask-position: 37px center;
+      mask-position: 35px center;
       background: $base-blue;
       position: absolute;
       bottom: 0;
@@ -121,6 +157,26 @@
 
   &::after {
     mask-image: url("/__spritemap#sprite-icon-arrow-view");
+  }
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      &::before {
+        right: 35px;
+        left: auto;
+        transform: translateY(50%);
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      &::before {
+        right: 35px;
+        bottom: 50%;
+        transform: translateY(50%);
+      }
+    }
   }
 }
 
@@ -195,8 +251,8 @@
   }
 }
 
-.juri__item-container:hover~.juri__active,
-.juri__item-container:focus~.juri__active {
+.juri__item-container:hover ~ .juri__active,
+.juri__item-container:focus ~ .juri__active {
   display: block;
 }
 

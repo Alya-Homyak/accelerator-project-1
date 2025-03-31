@@ -17,13 +17,8 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 45px;
-    width: 678px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 103px;
-    width: 768px;
+    padding: 0;
+    width: 100%;
   }
 }
 
@@ -45,17 +40,16 @@
 }
 
 .reviews__swiper {
-  margin: 0 auto;
   position: relative;
 
   @media (min-width: $tablet-width) {
     width: 500px;
-    padding: 0 90px;
+    padding: 0 134px;
   }
 
   @media (min-width: $desktop-width) {
     width: 560px;
-    padding: 0 103px;
+    padding: 0 192px;
   }
 }
 
@@ -63,9 +57,51 @@
   display: none;
   z-index: 2;
 
+  &:hover {
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 1px solid;
+      left: 30px;
+      bottom: 50%;
+      transform: translateY(45%);
+    }
+  }
+
+  &:focus {
+    &::before {
+      background-color: #e8e8e8;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: $base-blue;
+    }
+
+    &::after {
+      background: $base-white;
+    }
+  }
+
+  &:disabled {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      background: rgba(16, 38, 84, 0.3);
+    }
+  }
+
+
   @media (min-width: $tablet-width) {
     display: block;
-    width: 90px;
+    width: 134px;
     position: absolute;
     background-color: $base-white;
     border: none;
@@ -73,12 +109,12 @@
     &::after {
       content: "";
       display: block;
-      width: 90px;
+      width: 134px;
       height: auto;
       mask-size: 18px 32px;
       mask-repeat: no-repeat;
-      mask-position: 73px center;
-      background: rgba(16, 38, 84, 0.3);
+      mask-position: 72px 105px;
+      background: $base-blue;
       position: absolute;
       bottom: 0;
       top: 0;
@@ -88,11 +124,19 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 104px;
+    width: 192px;
+
+    &:hover {
+      &::before {
+        left: 50%;
+        bottom: 50%;
+        transform: translateX(-50%) translateY(50%);
+      }
+    }
 
     &::after {
-      width: 104px;
-      mask-position: 88px center;
+      width: 192px;
+      mask-position: center;
     }
   }
 }
@@ -117,10 +161,31 @@
     mask-image: url("/__spritemap#sprite-icon-arrow-view");
     rotate: 0;
   }
+
+  @media (min-width: $tablet-width) {
+    &:hover {
+      &::before {
+        right: 30px;
+        left: auto;
+        transform: translateY(55%);
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:hover {
+      &::before {
+        left: 50%;
+        bottom: 50%;
+        transform: translateX(-50%) translateY(50%);
+      }
+    }
+  }
 }
 
 .reviews__item {
   padding: 30px 25px;
+  box-sizing: border-box;
   background-color: $secondary-blue;
   color: $base-white;
   font-family: $roboto;
@@ -148,7 +213,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 40px 29px;
+    padding: 40px 30px;
   }
 
   @media (min-width: $desktop-width) {

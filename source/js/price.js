@@ -24,4 +24,3 @@ function onClicked(button) {
     document.querySelector('.price__twelfe-month').classList.add('price__list--active');
   }
 }
-
