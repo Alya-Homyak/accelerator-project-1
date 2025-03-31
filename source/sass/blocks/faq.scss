@@ -245,19 +245,23 @@
   }
 }
 
-.faq__item--active {
-
-  p {
-    margin: 0;
-    display: block;
-    animation: sliding-vertically 1s forwards;
+.faq__item--active p {
+  margin: 0;
+  display: block;
+  animation: sliding-vertically 1s forwards;
 
   @keyframes sliding-vertically {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-  }
-  }
+    0% {
+      opacity: 0;
+    }
 
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.faq__item--active {
   @media (min-width: $tablet-width) {
     row-gap: 10px;
     padding: 23px 0;
