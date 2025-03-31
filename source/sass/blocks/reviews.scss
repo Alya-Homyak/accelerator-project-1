@@ -45,7 +45,6 @@
 }
 
 .reviews__swiper {
-  margin: 0 auto;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -121,6 +120,7 @@
 
 .reviews__item {
   padding: 30px 25px;
+  box-sizing: border-box;
   background-color: $secondary-blue;
   color: $base-white;
   font-family: $roboto;
@@ -173,6 +173,7 @@
       grid-column: 1/2;
       width: 80px;
       height: 80px;
+      border-radius: 50%;
     }
 
     h3 {
